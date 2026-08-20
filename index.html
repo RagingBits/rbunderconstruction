@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status - Online Soon</title>
+    <style>
+        /* Base Cyberpunk Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #08080c;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Pure Digital Background Image Setup */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100%; height: 100%;
+            /* Replace with your exact background image filename */
+            background-image: url('background.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        /* Container Card with Glowing Cyber Outline */
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            background: rgba(13, 13, 18, 0.85);
+            padding: 50px 40px;
+            border-radius: 16px;
+            border: 2px solid #ef4444;
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.15), inset 0 0 15px rgba(239, 68, 68, 0.05);
+            max-width: 480px;
+            width: 90%;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Logo Configuration */
+        .logo-wrapper {
+            margin-bottom: 30px;
+        }
+        .logo-img {
+            max-width: 180px;
+            height: auto;
+            filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.4));
+        }
+
+        /* Typography & Interactive Status Badge */
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        p {
+            font-size: 1rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #f87171;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 1.8s infinite ease-in-out;
+            box-shadow: 0 0 8px #ef4444;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #ef4444; }
+            100% { transform: scale(0.8); opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-wrapper">
+            <!-- Replace 'your-logo-filename.png' with your image name -->
+            <img src="logo.jpg" alt="R Logo" class="logo-img">
+        </div>
+
+        <!-- Status Details -->
+        <div class="status-badge">
+            <span class="pulse-dot"></span>Systems Offline
+        </div>
+        
+        <h1>Website under construction</h1>
+        <p>The future of prototyping we will be here soon.</p>
+        <p>Raging Bits, toguether and beyond.</p>
+    </div>
+
+</body>
+</html>
